@@ -16,4 +16,5 @@ COPY . .
 
 # 起動コマンドの調整
 # フォルダ構成によって書き方が変わります（後述の注意点を確認してください）
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
+# main.py は appフォルダの中にあるため、 "app.main:app" と指定します
+CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
