@@ -8,16 +8,16 @@
 </head>
 <body>
     <div class="container">
-        <h1>Connect 4 AI Arena</h1>
+        <h1>Connect 4 AI Battle</h1>
 
         <div class="config-panel">
-            <h2>Game Config</h2>
+            <h2>ゲーム設定</h2>
             <div class="form-group">
-                <label>Board Size:</label>
+                <label>盤面サイズ:</label>
                 <select id="board-size">
-                    <option value="4,5">4 x 5 (Small)</option>
-                    <option value="6,7" selected>6 x 7 (Standard)</option>
-                    <option value="8,9">8 x 9 (Large)</option>
+                    <option value="4,5">4 x 5 (小)</option>
+                    <option value="6,7" selected>6 x 7 (標準)</option>
+                    <option value="8,9">8 x 9 (大)</option>
                 </select>
             </div>
             <div class="players-config">
@@ -40,9 +40,9 @@
                 </div>
             </div>
              <div class="advanced-settings">
-                 <small>AI Settings: Minimax Depth=4</small>
+                 <small>AI Settings: minmax Depth=4</small>
             </div>
-            <button id="start-btn" onclick="startGame()">Start Game</button>
+            <button id="start-btn" onclick="startGame()">Game Start</button>
         </div>
 
         <div id="game-status" class="status-message">Ready to start.</div>
